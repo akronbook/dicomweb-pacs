@@ -1,3 +1,4 @@
+require('dotenv').config();
 const config = require('config');
 const shell = require('shelljs');
 const fs = require('fs');

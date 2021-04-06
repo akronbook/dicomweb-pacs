@@ -1,15 +1,15 @@
 const config = {
     
     source: {
-      aet: "DICOMWEB_PACS",
-      ip: "127.0.0.1",
-      port: "8888"
+      aet: process.env.DICOMWEB_AET,
+      ip: process.env.DICOMWEB_IP,
+      port: process.env.DICOMWEB_PORT
     },
     peers: [
       {
-        aet: "SERVER",
-        ip: "127.0.0.1",
-        port: "104"
+        aet: process.env.PEER_AET,
+        ip: process.env.PEER_IP,
+        port: process.env.PEER_PORT
       }],
     logDir: "./logs",
     storagePath: "./data",
