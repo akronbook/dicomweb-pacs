@@ -1,3 +1,4 @@
+require('dotenv').config();
 const dimse = require('dicom-dimse-native');
 const config = require('config');
 const path = require('path');
